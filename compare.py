@@ -6,14 +6,14 @@ order to free up immense space.
 """
 import cv2
 import numpy as np
-from skimage.measure import compare_ssim
+from skimage.metrics import structural_similarity
 
 # Load the image
 image = cv2.imread("image1.jpg")
 
 # Display image
-cv2.imshow("Original",  original)
-print(original.shape)
+cv2.imshow("Original",  image)
+print(image.shape)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
